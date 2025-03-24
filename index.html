@@ -4,7 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Shop</title>
-  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Hero section with background image */
+    .hero {
+      background: url('https://images.pexels.com/photos/1905822/pexels-photo-1905822.jpeg') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      text-align: center;
+      padding-top: 150px;
+    }
+
+    /* About section with image */
+    .about {
+      padding: 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .about img {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+
+    /* Menu section */
+    .menu {
+      padding: 50px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .menu-item {
+      display: inline-block;
+      margin: 20px;
+      width: 250px;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,55 +67,46 @@
     <div class="logo">
       <h1>Coffee Haven</h1>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Hero Section with Coffee Image -->
+  <!-- Hero Section -->
   <section class="hero">
     <h2>Welcome to Coffee Haven</h2>
     <p>Your favorite place for freshly brewed coffee</p>
-    <button id="cta-btn">Order Now</button>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section class="about">
     <h2>About Us</h2>
     <p>At Coffee Haven, we brew the finest coffee beans from around the world.</p>
-    <img src="coffee-about.jpg" alt="Coffee Beans" class="about-image">
+    <img src="https://images.pexels.com/photos/4050579/pexels-photo-4050579.jpeg" alt="Coffee Cup">
   </section>
 
-  <!-- Menu Section with Coffee Images -->
-  <section id="menu" class="menu">
+  <!-- Menu Section -->
+  <section class="menu">
     <h2>Our Menu</h2>
     <div class="menu-items">
+      <!-- Espresso Item -->
       <div class="menu-item">
-        <img src="espresso.jpg" alt="Espresso" class="menu-item-img">
+        <img src="https://images.pexels.com/photos/2335400/pexels-photo-2335400.jpeg" alt="Espresso">
         <h3>Espresso</h3>
         <p>Rich, bold, and aromatic.</p>
       </div>
+
+      <!-- Latte Item -->
       <div class="menu-item">
-        <img src="latte.jpg" alt="Latte" class="menu-item-img">
+        <img src="https://images.pexels.com/photos/4050577/pexels-photo-4050577.jpeg" alt="Latte">
         <h3>Latte</h3>
         <p>Silky smooth with a touch of sweetness.</p>
       </div>
+
+      <!-- Cappuccino Item -->
       <div class="menu-item">
-        <img src="cappuccino.jpg" alt="Cappuccino" class="menu-item-img">
+        <img src="https://images.pexels.com/photos/1684030/pexels-photo-1684030.jpeg" alt="Cappuccino">
         <h3>Cappuccino</h3>
         <p>Classic coffee with a frothy top.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email us at <a href="mailto:info@coffeehaven.com">info@coffeehaven.com</a></p>
   </section>
 
   <!-- Footer -->
@@ -69,6 +114,5 @@
     <p>&copy; 2025 Coffee Haven</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
