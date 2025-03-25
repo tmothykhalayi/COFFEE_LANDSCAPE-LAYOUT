@@ -1,20 +1,32 @@
-/* Reset some default styles */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+/* Root Variables */
+:root {
+  --color-primary: #e74c3c;
+  --color-secondary: #27ae60;
+  --color-background: #f4f4f4;
+  --color-text-primary: #333;
+  --color-text-secondary: #555;
+  --color-header-background: #2c3e50;
+  --color-link-hover: #e74c3c;
+  --color-nav-logo: #ecf0f1;
 }
 
-/* Header styles */
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+/* Header Styles */
 header {
-  background-color: #2c3e50;
+  background-color: var(--color-header-background);
   padding: 10px 0;
 }
 
@@ -28,7 +40,7 @@ header {
 }
 
 .nav-logo {
-  color: #ecf0f1;
+  color: var(--color-nav-logo);
   text-decoration: none;
 }
 
@@ -48,17 +60,17 @@ header {
 
 .Nav-link {
   text-decoration: none;
-  color: #ecf0f1;
+  color: var(--color-nav-logo);
   font-size: 1rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .Nav-link:hover {
-  color: #e74c3c;
+  color: var(--color-link-hover);
 }
 
-/* Main content styles */
+/* Main Content Styles */
 main {
   padding: 50px 20px;
   text-align: center;
@@ -67,33 +79,33 @@ main {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: var(--color-header-background);
 }
 
 p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
-/* Add some responsive design */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .nav-menu {
-      flex-direction: column;
-      margin-top: 20px;
+    flex-direction: column;
+    margin-top: 20px;
   }
 
   .nav-item {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
 
-/* About section styles */
+/* About Section Styles */
 .about {
   padding: 40px 20px;
   background-color: #fff;
@@ -102,20 +114,20 @@ p {
 
 .about h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--color-header-background);
   margin-bottom: 20px;
 }
 
 .about p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-text-secondary);
   margin-bottom: 20px;
 }
 
 .about h2 {
   font-size: 2rem;
-  color: #2c3e50;
+  color: var(--color-header-background);
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -129,32 +141,33 @@ p {
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 10px;
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
 .about ul li strong {
   font-weight: bold;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments for About Section */
 @media screen and (max-width: 768px) {
   .about {
-      padding: 30px 15px;
+    padding: 30px 15px;
   }
 
   .about h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .about h2 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .about p, .about ul li {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
-/* Menu section styles */
+
+/* Menu Section Styles */
 .menu {
   padding: 40px 20px;
   background-color: #fff;
@@ -163,7 +176,7 @@ p {
 
 .menu h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--color-header-background);
   margin-bottom: 20px;
 }
 
@@ -173,7 +186,7 @@ p {
 
 .menu-category h2 {
   font-size: 2rem;
-  color: #2c3e50;
+  color: var(--color-header-background);
   margin-bottom: 15px;
 }
 
@@ -183,35 +196,35 @@ p {
 
 .menu-item h3 {
   font-size: 1.8rem;
-  color: #e74c3c;
+  color: var(--color-link-hover);
 }
 
 .menu-item p {
   font-size: 1rem;
-  color: #555;
+  color: var(--color-text-secondary);
 }
 
 .menu-item .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #27ae60;
+  color: var(--color-secondary);
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments for Menu Section */
 @media screen and (max-width: 768px) {
   .menu h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .menu-category h2 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   .menu-item h3 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .menu-item p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
