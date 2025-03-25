@@ -1,0 +1,28 @@
+/*styling the body*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    margin:1px;
+    padding-left: 0cap;
+    background: rgb(47, 255, 165);
+    color:#000;
+    text-align: center;
+    background-position: right;
+
+
+}
+/*styling the header*/
+header {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: normal;
+    margin:2px;
+    padding-left: 0cap;
+    background: grey;
+    color:#000000;
+    text-align: center;
+    background-position: left;
+	
+
+}
