@@ -23,6 +23,59 @@ header {
     color:#000000;
     text-align: center;
     background-position: left;
-	
+
+}
+.navbar {
+    display: flexbox;
+    justify-content: space-between;
+    background-color:azure;
+    align-items: center;
+    max-width: 1200px;
+    margin : 0 auto;
+    padding:0 20px;
+    
+}
+.nav-logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: burlywood;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    
+}
+.logo-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: cadetblue;
+    text-decoration: solid;
+    text-transform: capitalize;
+    font-weight: bolder;
+
+}
+.nav-menu {
+    display: flexbox;
+    justify-content: space-between;
+    background-color:azure;
+    align-items: center;
+    max-width: 1200px;
+    margin : 0 auto;
+    padding:0 20px;
+}
+.nav-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: burlywood;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.nav-link{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    
+
 
 }
