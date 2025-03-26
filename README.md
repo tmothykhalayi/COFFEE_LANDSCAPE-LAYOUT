@@ -5,8 +5,6 @@ Navigation Menu: A fixed navigation menu that links to various sections of the w
 
 About Section: Provides information about the coffee shop and its origins.
 
-Testimonials Section: Displays customer reviews with previous/next functionality.
-
 Gallery Section: Showcases images of the coffee shop and products in a responsive grid.
 
 Contact Section: Includes a contact form and a Google Maps embed to show the location of the shop.
