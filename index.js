@@ -37,3 +37,25 @@ document.querySelectorAll('.menu-item').forEach(item => {
       alert(`You've selected: ${itemName} for ${price}`);
   });
 });
+//ADD FUNCTIONALITY
+// --- Contact Section: Form Submission ---
+document.querySelector('.contact-form')?.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    const name = document.querySelector('#name').value.trim();
+    const email = document.querySelector('#email').value.trim();
+    const message = document.querySelector('#message').value.trim();
+
+    if (!name || !email || !message) {
+            alert('Please fill out all fields before submitting.');
+            return;
+    }
+
+    // Simulate form submission (e.g., send data to a server)
+    alert(`Thank you, ${name}! Your message has been received.`);
+
+    // Clear the form fields after submission
+    document.querySelector('#name').value = '';
+    document.querySelector('#email').value = '';
+    document.querySelector('#message').value = '';
+});
