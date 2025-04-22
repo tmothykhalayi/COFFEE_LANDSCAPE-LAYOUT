@@ -1,4 +1,4 @@
-Welcome to the Coffee Website project! This is a simple, responsive website designed for a coffee shop. It includes sections like About Us, Menu, Testimonials, Gallery, and Contact. The website is styled with CSS, and JavaScript is used to add interactivity, such as a testimonial carousel and gallery lightbox.
+Welcome to the Coffee Website project! This is a simple, responsive website designed for a coffee shop. It includes sections like About Us, Menu, Testimonials, Gallery, and Contact. The website is styled with CSS, and JavaScript  used to add interactivity, such as a testimonial carousel and gallery lightbox.
 
 Features
 Navigation Menu: A fixed navigation menu that links to various sections of the website.
